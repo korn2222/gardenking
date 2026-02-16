@@ -230,19 +230,45 @@
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
                         class="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary rounded-md p-1"
                         aria-label="Otwórz menu mobilne">
                         <span class="material-icons text-3xl">menu</span>
                     </button>
                 </div>
             </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu"
+                class="hidden fixed inset-0 z-[60] bg-white/95 backdrop-blur-xl md:hidden flex flex-col justify-center items-center space-y-8 transition-opacity duration-300">
+                <button onclick="toggleMobileMenu()"
+                    class="absolute top-6 right-6 text-gray-600 hover:text-gray-900 focus:outline-none p-2">
+                    <span class="material-icons text-4xl">close</span>
+                </button>
+                <div
+                    class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center text-white font-bold text-3xl shadow-glow mb-4">
+                    GK
+                </div>
+                <a class="text-2xl font-bold text-gray-800 hover:text-primary transition-colors" href="#services"
+                    onclick="toggleMobileMenu()">Usługi</a>
+                <a class="text-2xl font-bold text-gray-800 hover:text-primary transition-colors" href="#about"
+                    onclick="toggleMobileMenu()">O Nas</a>
+                <a class="text-2xl font-bold text-gray-800 hover:text-primary transition-colors" href="#gallery"
+                    onclick="toggleMobileMenu()">Realizacje</a>
+                <a class="text-2xl font-bold text-gray-800 hover:text-primary transition-colors" href="#contact"
+                    onclick="toggleMobileMenu()">Kontakt</a>
+                <a class="bg-primary hover:bg-primary-dark text-gray-900 hover:text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg text-xl"
+                    href="tel:+48123456789">
+                    Zadzwoń
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="relative pt-20 flex items-center min-h-[85vh] overflow-hidden" aria-label="Sekcja powitalna">
+        <section class="relative pt-28 md:pt-20 flex items-center min-h-[85vh] overflow-hidden"
+            aria-label="Sekcja powitalna">
             <!-- Background Image -->
             <div class="absolute inset-0 z-0">
                 <img alt="Profesjonalny arborysta podczas wycinki dużego drzewa z użyciem sprzętu alpinistycznego"
@@ -722,6 +748,22 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const body = document.body;
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+            } else {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                body.style.overflow = 'auto';
+            }
+        }
+    </script>
 </body>
 
 </html>
