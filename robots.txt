@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gardenking.szczecin.pl/sitemap.xml

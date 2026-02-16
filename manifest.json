@@ -1,0 +1,21 @@
+{
+  "name": "Garden King Szczecin",
+  "short_name": "Garden King",
+  "description": "Profesjonalne usługi ogrodnicze w Szczecinie. Wycinka drzew, trawniki, pielęgnacja.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0df20d",
+  "icons": [
+    {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBAPX-yxiTcB8q7eV9XUM68JX3R4KDo7QytaoyuvmYh3zxSNbn61AdL7FQVqr9RN1ZJn9bwrVplsudriJNp7uF5W9DFd7pPcpsJ7lHM_tiy0nYpsW629o6bOoAmwA3rfCIlkxfgv5YBWHAd47v_2DdWQORLvra6jwmF7ZLjncmpFo_fQopCYuT5BtgL3EgvnXPVMu61BmthQNNQkl2wDRQvlgO9WceG0qwfLMy3HDot-89FYMLYdW7x04FwOiADbRfpLN1xL-rtyabR",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBAPX-yxiTcB8q7eV9XUM68JX3R4KDo7QytaoyuvmYh3zxSNbn61AdL7FQVqr9RN1ZJn9bwrVplsudriJNp7uF5W9DFd7pPcpsJ7lHM_tiy0nYpsW629o6bOoAmwA3rfCIlkxfgv5YBWHAd47v_2DdWQORLvra6jwmF7ZLjncmpFo_fQopCYuT5BtgL3EgvnXPVMu61BmthQNNQkl2wDRQvlgO9WceG0qwfLMy3HDot-89FYMLYdW7x04FwOiADbRfpLN1xL-rtyabR",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
